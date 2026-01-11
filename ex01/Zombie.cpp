@@ -1,0 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/11 15:11:59 by jpflegha          #+#    #+#             */
+/*   Updated: 2026/01/11 15:12:14 by jpflegha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Zombie.hpp"
+
+Zombie::Zombie(std::string name) : name(name)
+{}
+
+Zombie::~Zombie()
+{
+    std::cout << name << " 🧟 has been destroyed" << std::endl;
+}
+
+void    Zombie::announce(void)
+{
+    std::cout << name << " 🧟 : BraiiiiiiinnnzzzZ..." << std::endl;
+}
