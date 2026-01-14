@@ -6,13 +6,13 @@
 /*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:48:27 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/01/14 16:03:11 by jpflegha         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:24:15 by jpflegha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) : _name(name)
+HumanB::HumanB(std::string name) : _name(name), _weapon(NULL)
 {}
 
 void    HumanB::setWeapon(Weapon& weapon)

@@ -6,7 +6,7 @@
 /*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/11 16:20:17 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/01/14 16:13:49 by jpflegha         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:25:50 by jpflegha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,10 @@ int main()
 }
 return 0;
 }
+
+// Reference &:	                    Pointer *:
+//                          |
+// Must be initialized	    |        Can be null
+// Cannot be reseated	    |        Can point to something else
+// Always valid	            |        Must be checked
+// Safer	                |        More flexible
