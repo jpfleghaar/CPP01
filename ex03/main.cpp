@@ -6,13 +6,29 @@
 /*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/11 16:20:17 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/01/11 16:21:18 by jpflegha         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:13:49 by jpflegha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
 int main()
 {
-    return 0;
+{
+    Weapon club = Weapon("crude spiked club");
+    HumanA bob("Bob", club);
+    bob.attack();
+    club.setType("some other type of club");
+    bob.attack();
+}
+{
+    Weapon club = Weapon("crude spiked club");
+    HumanB jim("Jim");
+    jim.setWeapon(club);
+    jim.attack();
+    club.setType("some other type of club");
+    jim.attack();
+}
+return 0;
 }

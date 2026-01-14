@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jpflegha <jpflegha@student.42.fr>          +#+  +:+       +#+         #
+#    By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/11 16:18:38 by jpflegha          #+#    #+#              #
-#    Updated: 2026/01/13 15:53:08 by jpflegha         ###   ########.fr        #
+#    Updated: 2026/01/14 16:14:28 by jpflegha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = flag
+NAME = violence
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++17
-SRC = main.cpp
+SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # ANSI colors
@@ -28,8 +28,8 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
-	@printf "$(BLUE) :::  ::: ::: ::::::: $(RED) ===      ======== ==== ===  ======= ========\n"
-	@printf "$(BLUE) :::  ::: ::: :::  :::$(WHITE) ===      ===      ======== ===      ===     \n"
+	@printf "$(BLUE) :::  ::: ::: ::::::: $(RED) ===      ======== ===  ===  ======= ========\n"
+	@printf "$(BLUE) :::  ::: ::: :::  :::$(WHITE) ===      ===      ==== === ===      ===     \n"
 	@printf "$(RED) ===  === === ===  === ===      ======   ======== ===      ======  \n"
 	@printf "$(WHITE)  ======  === ===  === ===      ===      === ==== ===      ===     \n"
 	@printf "$(RED)    ==    ===  ======  ======== ======== ===  ===  ======= ======== \n"
