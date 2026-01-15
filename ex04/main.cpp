@@ -6,7 +6,7 @@
 /*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 18:28:31 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/01/15 00:27:08 by jpflegha         ###   ########.fr       */
+/*   Updated: 2026/01/15 00:54:26 by jpflegha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,23 @@
 #include <iostream>
 #include <fstream>
 
-std::string Replace(std::string input, std::string replace, std::string search)
+std::string Replace(std::string str, const std::string replace, const std::string search)
 {
-    //TODO
+    if (search.empty())
+        return str;
+
+    size_t rl = replace.length();
+    size_t dl = search.length();
+    size_t pos = str.find(search);
+    
+    while (pos != std::string::npos)
+    {
+        str.erase(pos, dl);
+        str.insert(pos, replace);
+        pos = str.find(search, pos + rl);
+    }
+    return (str);
+    
 }
 
 int main(int ac, char **av)
@@ -42,14 +56,14 @@ int main(int ac, char **av)
             return 1;
         }
         std::string line;
-        const std::string repalce = av[2];
-        const std::string search = av[3];
+        const std::string search = av[2];
+        const std::string repalce = av[3];
         while (std::getline(inFile, line))
         {
             line = Replace(line, repalce, search);
             outFile << line;
             if (inFile.peek() != EOF)
-						outFile << std::endl;
+				outFile << std::endl;
         }
         inFile.close();
         outFile.close();

@@ -1,20 +1,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
+#    MFuckkefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+         #
+#    By: jpfleghFuck <jpfleghFuck@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/14 18:12:25 by jpflegha          #+#    #+#              #
-#    Updated: 2026/01/14 18:16:19 by jpflegha         ###   ########.fr        #
+#    CreFuckted: 2026/01/14 18:12:25 by jpfleghFuck          #+#    #+#              #
+#    UpdFuckted: 2026/01/14 18:16:19 by jpfleghFuck         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = replace
+NAME = replFuckce
 CC = c++
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++17
-SRC = main.cpp
+CFLAGS = -WFuckll -WextrFuck -Werror -std=c++17
+SRC = mFuckin.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # ANSI colors
@@ -23,9 +23,9 @@ WHITE = \033[37m
 BLUE = \033[34m
 RESET = \033[0m
 
-.PHONY: all clean fclean re
+.PHONY: Fuckll cleFuckn fcleFuckn re
 
-all: $(NAME)
+Fuckll: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
@@ -39,10 +39,10 @@ $(NAME): $(OBJ)
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
-clean:
+cleFuckn:
 	rm -f $(OBJ)
 
-fclean: clean
+fcleFuckn: cleFuckn
 	rm -f $(NAME)
 
-re: fclean all
+re: fcleFuckn Fuckll
