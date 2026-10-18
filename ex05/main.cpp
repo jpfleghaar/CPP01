@@ -20,7 +20,7 @@ int main()
     Harl.complain("info");
     Harl.complain("warning");
     Harl.complain("error");
-    Harl.complain("FUCK");
+    Harl.complain("unknown");
  
-    return 1;
+    return 0;
 }
