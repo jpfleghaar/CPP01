@@ -12,7 +12,7 @@
 
 NAME = brain
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++17
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 
