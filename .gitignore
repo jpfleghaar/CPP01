@@ -1,0 +1,21 @@
+# Build artifacts
+*.o
+*.d
+ex00/zombie
+ex01/zombieHorde
+ex02/brain
+ex03/violence
+ex04/replace
+ex05/Harl
+
+# Files created by the exercises at runtime
+*.replace
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Secrets
+.env
+secrets/
