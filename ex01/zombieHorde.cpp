@@ -11,16 +11,20 @@
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+#include <cstddef>
+#include <sstream>
 
 Zombie** zombieHorde( int N, std::string name )
 {
 
     if (N <= 0)
-        return nullptr;
+        return NULL;
     Zombie** horde = new Zombie*[N];
      for (int i = 0; i < N; i++)
     {
-        horde[i] = new Zombie(name + std::to_string(i + 1));
+        std::ostringstream num;
+        num << (i + 1);
+        horde[i] = new Zombie(name + num.str());
     }
 
     return horde;
