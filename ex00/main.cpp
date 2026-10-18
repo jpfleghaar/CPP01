@@ -25,5 +25,6 @@ int main()
     randomChump("StackZombie");
 
     delete heapZombie;
+    delete leak;
     return 0;
 }
