@@ -45,14 +45,14 @@ int main(int ac, char **av)
         inFile.open(av[1]);
         if (inFile.fail())
         {
-            std::cerr << "Fialed to open" << std::endl;
+            std::cerr << "Failed to open" << std::endl;
             return 1;
         }
         std::ofstream outFile;
         outFile.open((std::string(av[1]) + ".replace").c_str());
         if (outFile.fail())
         {
-            std::cerr << "Fialed to open" << std::endl;
+            std::cerr << "Failed to open" << std::endl;
             return 1;
         }
         std::string line;
@@ -70,7 +70,7 @@ int main(int ac, char **av)
     }
     else
     {
-        std::cout   << "To many arguments!" <<std::endl;
+        std::cout   << "Too many arguments!" <<std::endl;
         return 1;
     }
     return 0;
