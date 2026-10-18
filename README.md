@@ -1,6 +1,6 @@
 # C++ Module 01 — Memory allocation, references, pointers to members
 
-Stack vs. heap allocation, references vs. pointers, file streams and pointers to member functions in C++98.
+Stack vs. heap allocation, references vs. pointers, file streams and pointers to member functions in C++.
 
 *This project was created as part of the 42 curriculum by jpflegha.*
 
@@ -51,7 +51,7 @@ bye world
 say bye
 ```
 
-Every exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++98`).
+Every exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++17`).
 
 ## Project structure
 
