@@ -18,6 +18,6 @@ HumanA::HumanA(std::string name, Weapon& Weapon)
 
 void HumanA::attack() const
 {
-    std::cout   <<_name << " attack with their "
+    std::cout   <<_name << " attacks with their "
                 << _weapon.getType() << std::endl;
 }
